@@ -1,0 +1,55 @@
+/******************************************************************************
+ 
+                            Online C Compiler.
+                Code, Compile, Run and Debug C program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+ 
+*******************************************************************************/
+ 
+#include <stdio.h>
+ 
+int main()
+{
+    int s1, s2, r, i, j;
+    printf("Con FOR\n\n");
+    printf("Tablas de multiplicar\n");
+    printf("---------------------\n");
+    for(i=1; i<11; i++){
+        printf("Tabla del %d\n", i);
+        for(j=1; j<14; j++){
+            printf("%d * %d = %d\n", i, j, i*j);
+        }
+        printf("\n");
+    }
+
+ 
+    printf("\nCon WHILE\n\n");
+    printf("Tablas de multiplicar\n");
+    printf("---------------------\n");
+    i=1;
+    while (i<11){
+        printf("Tabla del %d\n", i);
+        j=1;
+        while (j<14){
+            printf("%d * %d = %d\n", i, j, i*j);
+            j++;
+        }
+        i++;
+    }
+    printf("\nCon DO WHILE\n\n");
+    printf("Tablas de multiplicar\n");
+    printf("---------------------\n");
+    i=1;
+    do {
+        printf("Tabla del %d\n", i);
+        j=1;
+        do{
+            printf("%d * %d = %d\n", i, j, i*j);
+            j++;
+        }while(j<14);
+        i++;
+    }while(i<11);
+
+ 
+    return 0;
+}
